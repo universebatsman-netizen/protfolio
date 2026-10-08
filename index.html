@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Shivkarna | AI/ML & Software Engineering Portfolio</title>
+  <meta name="title" content="Shivkarna | AI/ML & Software Engineering Portfolio">
+  <meta name="description" content="Portfolio of Shivkarna - AI/ML and software engineering student specializing in C, Python, Java, Data Structures, OOPs, and Operating Systems.">
+  <meta name="keywords" content="Shivkarna, Software Engineering, AI, Machine Learning, Python, Java, C, Data Structures, Algorithms, Portfolio">
+  <meta name="author" content="Shivkarna">
+  <meta name="theme-color" content="#7c48cf">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shivkarna | AI/ML & Software Engineering Portfolio">
+  <meta property="og:description" content="Explore AI projects, technical skills, career timeline, and endorsements for Shivkarna.">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-vertical-nav">
+
+  <!-- ================================================================= -->
+  <!-- MOBILE TOP HEADER (Visible only on screens < 1024px)              -->
+  <!-- ================================================================= -->
+  <header class="mobile-top-bar" id="mobile-top-bar" aria-label="Mobile Navigation Bar">
+    <a href="#hero" class="mobile-brand" aria-label="Shivkarna Home">
+      <span class="brand-bracket">&lt;</span>
+      <span class="brand-text">Shivkarna</span>
+      <span class="brand-bracket">/&gt;</span>
+    </a>
+
+    <div class="mobile-top-actions">
+      <!-- Mobile Theme Toggle -->
+      <button 
+        type="button" 
+        class="theme-toggle-btn mobile-theme-btn" 
+        aria-label="Toggle Night/Dark Mode" 
+        aria-pressed="false"
+        title="Toggle Theme Mode"
+      >
+        <span class="toggle-track">
+          <span class="toggle-indicator">
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </span>
+        </span>
+      </button>
+
+      <!-- Hamburger Button -->
+      <button 
+        type="button" 
+        class="mobile-nav-toggle" 
+        id="mobile-nav-toggle" 
+        aria-controls="vertical-navbar" 
+        aria-expanded="false" 
+        aria-label="Open Navigation Menu"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Backdrop overlay for mobile drawer -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ================================================================= -->
+  <!-- VERTICAL NAVIGATION BAR (LEFT SIDE OF THE SCREEN)                 -->
+  <!-- Links: Home, About Me, Skills, Timeline, Projects, Testimonials,  -->
+  <!-- Chat, Contact. Lavender Minimal aesthetic & fully accessible.     -->
+  <!-- ================================================================= -->
+  <aside class="sidebar-container" id="sidebar-container" aria-label="Primary Navigation">
+    <nav class="vertical-navbar" id="vertical-navbar">
+      
+      <!-- Navbar Header: Brand & Identity -->
+      <div class="sidebar-header">
+        <a href="#hero" class="sidebar-brand-link" aria-label="Shivkarna Portfolio Home">
+          <div class="sidebar-avatar-mini">
+            <img src="1.jpeg" alt="Shivkarna Portrait" class="sidebar-avatar-img">
+            <span class="sidebar-status-dot" title="Available for opportunities"></span>
+          </div>
+          <div class="sidebar-brand-meta">
+            <span class="sidebar-brand-title">Shivkarna</span>
+            <span class="sidebar-brand-subtitle">AI & Software Eng.</span>
+          </div>
+        </a>
+
+        <!-- Close button inside drawer for mobile accessibility -->
+        <button type="button" class="sidebar-close-btn" id="sidebar-close-btn" aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links List (8 Required Items) -->
+      <div class="sidebar-scrollable-menu">
+        <ul class="vertical-nav-list" role="list">
+          
+          <!-- 1. Home -->
+          <li class="vertical-nav-item">
+            <a href="#hero" class="vertical-nav-link active" data-section="hero" id="nav-link-hero" aria-current="page">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </span>
+              <span class="nav-label">Home</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 2. About Me -->
+          <li class="vertical-nav-item">
+            <a href="#about" class="vertical-nav-link" data-section="about" id="nav-link-about">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </span>
+              <span class="nav-label">About Me</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 3. Skills -->
+          <li class="vertical-nav-item">
+            <a href="#skills" class="vertical-nav-link" data-section="skills" id="nav-link-skills">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </span>
+              <span class="nav-label">Skills</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 4. Timeline -->
+          <li class="vertical-nav-item">
+            <a href="#timeline" class="vertical-nav-link" data-section="timeline" id="nav-link-timeline">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </span>
+              <span class="nav-label">Timeline</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 5. Projects -->
+          <li class="vertical-nav-item">
+            <a href="#projects" class="vertical-nav-link" data-section="projects" id="nav-link-projects">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+              </span>
+              <span class="nav-label">Projects</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 6. Video Highlight -->
+          <li class="vertical-nav-item">
+            <a href="#video-highlight" class="vertical-nav-link" data-section="video-highlight" id="nav-link-video">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </span>
+              <span class="nav-label">Highlight</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 7. Testimonials -->
+          <li class="vertical-nav-item">
+            <a href="#testimonials" class="vertical-nav-link" data-section="testimonials" id="nav-link-testimonials">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </span>
+              <span class="nav-label">Testimonials</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 7. Chat -->
+          <li class="vertical-nav-item">
+            <a href="#chat" class="vertical-nav-link" data-section="chat" id="nav-link-chat">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+              </span>
+              <span class="nav-label">Chat</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+          <!-- 8. Contact -->
+          <li class="vertical-nav-item">
+            <a href="#contact" class="vertical-nav-link" data-section="contact" id="nav-link-contact">
+              <span class="nav-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <span class="nav-label">Contact</span>
+              <span class="nav-active-indicator" aria-hidden="true"></span>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Navbar Footer: Night Mode Toggle & Status -->
+      <div class="sidebar-footer">
+        
+        <!-- Night Mode Toggle (CSS Media Queries Detection Support) -->
+        <div class="sidebar-theme-wrapper">
+          <span class="theme-label-text">Night Mode</span>
+          <button 
+            type="button" 
+            id="theme-toggle" 
+            class="theme-toggle-btn" 
+            aria-label="Toggle Night/Dark Mode" 
+            aria-pressed="false"
+            title="Toggle Theme Mode (Auto-detects browser default)"
+          >
+            <span class="toggle-track">
+              <span class="toggle-indicator">
+                <span class="icon-sun" aria-hidden="true">☀️</span>
+                <span class="icon-moon" aria-hidden="true">🌙</span>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <!-- Academic & Availability Status -->
+        <div class="sidebar-status-box">
+          <span class="status-indicator-ping"></span>
+          <span class="sidebar-status-text">9.40 CGPA • Ready to Build</span>
+        </div>
+
+      </div>
+
+    </nav>
+  </aside>
+
+  <!-- ================================================================= -->
+  <!-- MAIN CONTENT AREA (Offset to the right on desktop for navbar)     -->
+  <!-- ================================================================= -->
+  <main id="main-content" class="content-wrapper">
+
+    <!-- =============================================================== -->
+    <!-- SECTION 1: HERO (LAVENDER MINIMAL STYLE)                        -->
+    <!-- Features: Background Image, Lavender Minimal Design, Welcoming  -->
+    <!-- Title, Brief Tagline, Call-To-Action buttons, and Profile Card  -->
+    <!-- =============================================================== -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      
+      <!-- Background Image Layer (BACKGROUNGIMAGE.jpeg) -->
+      <div class="hero-bg-layer" aria-hidden="true"></div>
+
+      <!-- Lavender Gradient & Glass Blur Overlay -->
+      <div class="hero-overlay-layer" aria-hidden="true"></div>
+
+      <!-- Ambient Lavender Glow Spheres -->
+      <div class="hero-ambient-glow-1" aria-hidden="true"></div>
+      <div class="hero-ambient-glow-2" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <!-- Welcome Status Badge -->
+          <div class="hero-welcome-badge">
+            <span class="badge-sparkle">✦</span>
+            <span class="badge-text">Welcome to my portfolio</span>
+            <span class="badge-sep">•</span>
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Opportunities</span>
+          </div>
+
+          <!-- Welcoming Title -->
+          <h1 id="hero-title" class="hero-title">
+            Welcome — I'm <span class="highlight-lavender">Shivkarna</span>
+          </h1>
+
+          <!-- Brief Tagline -->
+          <p class="hero-tagline">
+            Artificial Intelligence & Machine Learning engineering student crafting clean architectures, intelligent systems, and minimalist digital experiences with purpose, elegance, and precision.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+            <a href="#chat" class="btn btn-secondary">
+              <span>Interactive Chat</span>
+            </a>
+            <a href="Prachi_Shas_Bora_s_Résumé.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" download>
+              <span class="btn-icon" aria-hidden="true">📄</span>
+              <span>Download Résumé</span>
+            </a>
+          </div>
+
+          <!-- Hero Tech Stack Quick Meta (Strictly from Resume) -->
+          <div class="hero-quick-meta">
+            <span class="meta-label">Core Skills:</span>
+            <span class="meta-tag">Python</span>
+            <span class="meta-tag">Java</span>
+            <span class="meta-tag">C</span>
+            <span class="meta-tag">Data Structures</span>
+            <span class="meta-tag">OOPs</span>
+            <span class="meta-tag">Operating Systems</span>
+            <span class="meta-tag">AI & Machine Learning</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase (Lavender Minimal Card with Profile Picture) -->
+        <div class="hero-visual-wrapper">
+          <div class="hero-profile-showcase">
+            
+            <div class="showcase-card-header">
+              <span class="card-dot dot-1"></span>
+              <span class="card-dot dot-2"></span>
+              <span class="card-dot dot-3"></span>
+              <span class="card-title-text">engineer.profile</span>
+            </div>
+
+            <div class="showcase-card-body">
+              <!-- Avatar Frame with 1.jpeg -->
+              <div class="showcase-avatar-wrapper">
+                <img src="1.jpeg" alt="Shivkarna Portrait" class="showcase-avatar-img">
+                <div class="showcase-status-indicator" title="Active & Ready">
+                  <span class="status-indicator-dot"></span>
+                </div>
+              </div>
+
+              <!-- Profile Details -->
+              <div class="showcase-info">
+                <h2 class="showcase-name">Shivkarna</h2>
+                <p class="showcase-subtitle">2nd Year AIML Engineering Student</p>
+                <p class="showcase-institution">Adichunchanagiri Inst. of Technology</p>
+                
+                <!-- Quick Stats Pill Grid -->
+                <div class="showcase-stats">
+                  <div class="showcase-stat-item">
+                    <span class="showcase-stat-val">9.40</span>
+                    <span class="showcase-stat-lbl">CGPA</span>
+                  </div>
+                  <div class="showcase-stat-divider"></div>
+                  <div class="showcase-stat-item">
+                    <span class="showcase-stat-val">AI/ML</span>
+                    <span class="showcase-stat-lbl">Focus</span>
+                  </div>
+                  <div class="showcase-stat-divider"></div>
+                  <div class="showcase-stat-item">
+                    <span class="showcase-stat-val">Bidar</span>
+                    <span class="showcase-stat-lbl">Location</span>
+                  </div>
+                </div>
+
+                <!-- Engineering Philosophy Code Snippet -->
+                <div class="showcase-snippet">
+                  <span class="snippet-label">Philosophy:</span>
+                  <code class="snippet-code">"Simplicity • Scalability • Impact"</code>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 2: ABOUT                                                -->
+    <!-- Professional narrative, background story, and key principles    -->
+    <!-- =============================================================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <p class="section-tag">01. Overview</p>
+          <h2 id="about-title" class="section-title">About Me</h2>
+          <p class="section-description">A glimpse into my engineering journey, academic milestones, and personal passions.</p>
+        </header>
+
+        <div class="about-grid">
+          
+          <!-- Left Column: Short Bio, Career Highlights & Personal Interests -->
+          <div class="about-text-column">
+            
+            <!-- Short Bio -->
+            <div class="about-bio-block">
+              <p class="lead-text">
+                I am <strong class="name-highlight">Shivkarna</strong>, a 2nd year Artificial Intelligence and Machine Learning (AIML) engineering student at Adichunchanagiri Institute of Technology, Chikkamagaluru.
+              </p>
+              <p>
+                I am deeply passionate about <strong>Artificial Intelligence and software development</strong>. As a hardworking and quick learner who genuinely enjoys exploring new technologies, I focus on building practical, impactful solutions that bridge theoretical computer science with real-world utility.
+              </p>
+              <p>
+                My foundation spans core programming in <strong>C, Python, and Java</strong>, reinforced by key computer science concepts: Object-Oriented Programming (OOPs), Data Structures and Algorithms, and Operating Systems. Above all, I love solving problems and discovering new ways technology can improve lives.
+              </p>
+            </div>
+
+            <!-- Career Highlights Cards -->
+            <div class="about-highlights-deck">
+              <h3 class="highlights-heading">Career & Academic Highlights</h3>
+              
+              <div class="highlight-cards-grid">
+                
+                <!-- Highlight 1: Academic Excellence -->
+                <div class="highlight-mini-card">
+                  <div class="highlight-mini-icon">🎓</div>
+                  <div class="highlight-mini-content">
+                    <span class="highlight-mini-val">9.40 CGPA</span>
+                    <span class="highlight-mini-title">Academic Distinction</span>
+                    <p class="highlight-mini-desc">Achieved in the 1st year of B.E. at Adichunchanagiri Institute of Technology.</p>
+                  </div>
+                </div>
+
+                <!-- Highlight 2: Practical Engineering Projects -->
+                <div class="highlight-mini-card">
+                  <div class="highlight-mini-icon">🚀</div>
+                  <div class="highlight-mini-content">
+                    <span class="highlight-mini-val">2 Practical Projects</span>
+                    <span class="highlight-mini-title">Real-World Engineering</span>
+                    <p class="highlight-mini-desc">Built Smart Animal Detection System (AI alerts) & Crop Field Monitoring (IoT telemetry).</p>
+                  </div>
+                </div>
+
+                <!-- Highlight 3: Competitions & Certifications -->
+                <div class="highlight-mini-card">
+                  <div class="highlight-mini-icon">🏆</div>
+                  <div class="highlight-mini-content">
+                    <span class="highlight-mini-val">Hackathon & Certs</span>
+                    <span class="highlight-mini-title">Workshops & Internship</span>
+                    <p class="highlight-mini-desc">Hackathon participation, Python Workshop Certificate, and 3-Day Technical Internship.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div class="about-interests-block">
+              <h3 class="interests-heading">Personal Interests & Passions</h3>
+              <p class="interests-subtext">What inspires and drives me both inside the tech world and in my free time:</p>
+              
+              <div class="interests-pill-cloud">
+                <span class="interest-pill"><span class="interest-icon">🤖</span> Artificial Intelligence & Software Development</span>
+                <span class="interest-pill"><span class="interest-icon">🧩</span> Problem Solving</span>
+                <span class="interest-pill"><span class="interest-icon">🎧</span> Listening to Music (Free Time)</span>
+                <span class="interest-pill"><span class="interest-icon">🚀</span> Learning New Technologies</span>
+                <span class="interest-pill"><span class="interest-icon">🌾</span> Agricultural & Environmental Tech</span>
+                <span class="interest-pill"><span class="interest-icon">🗣️</span> Multilingual (Kannada, English, Hindi)</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Minimalist Profile Card with Photo & Pixel-Art Avatar -->
+          <div class="about-media-column">
+            <div class="profile-card">
+              
+              <!-- Avatar View Mode Switcher -->
+              <div class="avatar-view-switcher" role="group" aria-label="Avatar display style">
+                <button type="button" class="avatar-toggle-btn active" id="btn-show-photo" aria-pressed="true">
+                  <span class="btn-toggle-icon">📷</span> Portrait
+                </button>
+                <button type="button" class="avatar-toggle-btn" id="btn-show-pixel" aria-pressed="false">
+                  <span class="btn-toggle-icon">👾</span> Pixel Art
+                </button>
+              </div>
+
+              <!-- Avatar Display Area (Photo 1.jpeg & Pixel-Art SVG) -->
+              <div class="profile-avatar-placeholder">
+                
+                <!-- Real Portrait Photo -->
+                <img 
+                  src="1.jpeg" 
+                  alt="Shivkarna Portrait" 
+                  class="profile-img" 
+                  id="profile-photo-view"
+                >
+
+                <!-- Pixel-Art Avatar (SVG - Razor Sharp Crisp Edges) -->
+                <svg 
+                  class="pixel-avatar-svg" 
+                  id="profile-pixel-view" 
+                  viewBox="0 0 32 32" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  shape-rendering="crispEdges" 
+                  aria-label="Pixel-art avatar of Shivkarna" 
+                  style="display: none;"
+                >
+                  <rect width="32" height="32" fill="#ede5f8"/>
+                  <rect x="10" y="4" width="12" height="3" fill="#1b152e"/>
+                  <rect x="8" y="7" width="16" height="5" fill="#1b152e"/>
+                  <rect x="7" y="10" width="4" height="8" fill="#1b152e"/>
+                  <rect x="21" y="10" width="4" height="8" fill="#1b152e"/>
+                  <rect x="13" y="2" width="6" height="3" fill="#1b152e"/>
+                  <rect x="11" y="9" width="10" height="9" fill="#e8b89d"/>
+                  <rect x="13" y="18" width="6" height="3" fill="#d9a58b"/>
+                  <rect x="12" y="11" width="3" height="1" fill="#1b152e"/>
+                  <rect x="17" y="11" width="3" height="1" fill="#1b152e"/>
+                  <rect x="12" y="13" width="2" height="2" fill="#1b152e"/>
+                  <rect x="18" y="13" width="2" height="2" fill="#1b152e"/>
+                  <rect x="12" y="13" width="1" height="1" fill="#ffffff"/>
+                  <rect x="18" y="13" width="1" height="1" fill="#ffffff"/>
+                  <rect x="11" y="15" width="2" height="1" fill="#f09995"/>
+                  <rect x="19" y="15" width="2" height="1" fill="#f09995"/>
+                  <rect x="14" y="16" width="4" height="1" fill="#b3695c"/>
+                  <rect x="9" y="21" width="14" height="11" fill="#7c48cf"/>
+                  <rect x="7" y="23" width="18" height="9" fill="#7c48cf"/>
+                  <rect x="6" y="25" width="20" height="7" fill="#6d39be"/>
+                  <rect x="13" y="21" width="6" height="3" fill="#ffffff"/>
+                  <rect x="14" y="24" width="4" height="3" fill="#ede9fe"/>
+                  <rect x="6" y="11" width="2" height="5" fill="#a78bfa"/>
+                  <rect x="24" y="11" width="2" height="5" fill="#a78bfa"/>
+                  <rect x="7" y="9" width="1" height="3" fill="#c4b5fd"/>
+                  <rect x="24" y="9" width="1" height="3" fill="#c4b5fd"/>
+                  <rect x="8" y="6" width="16" height="1" fill="#c4b5fd"/>
+                </svg>
+
+                <div class="avatar-badge-online" title="Available for engineering opportunities">
+                  <span class="avatar-badge-dot"></span>
+                </div>
+              </div>
+
+              <!-- Profile Details -->
+              <div class="profile-meta">
+                <h3 class="profile-name">Shivkarna</h3>
+                <p class="profile-title">2nd Year AIML Engineering Student</p>
+                <p class="profile-institution">Adichunchanagiri Inst. of Technology</p>
+                <p class="profile-location">📍 Bidar & Chikkamagaluru, Karnataka</p>
+                
+                <div class="profile-divider"></div>
+
+                <!-- Languages Spoken from Resume -->
+                <div class="profile-section-sub">
+                  <span class="sub-label">Languages:</span>
+                  <div class="profile-languages">
+                    <span class="lang-tag">Kannada</span>
+                    <span class="lang-tag">English</span>
+                    <span class="lang-tag">Hindi</span>
+                  </div>
+                </div>
+
+                <!-- Core Work Ethics & Strengths -->
+                <div class="profile-section-sub">
+                  <span class="sub-label">Core Strengths:</span>
+                  <div class="profile-strengths">
+                    <span class="strength-tag">Hardworking</span>
+                    <span class="strength-tag">Quick Learner</span>
+                    <span class="strength-tag">Problem Solving</span>
+                    <span class="strength-tag">Adaptability</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 3: SKILLS                                               -->
+    <!-- Strictly using skills from resume, without any additions        -->
+    <!-- =============================================================== -->
+    <!-- =============================================================== -->
+    <!-- SECTION 3: SKILLS (Recruiter-Friendly AIML Portfolio Showcase)  -->
+    <!-- Categorized layout with SVG icons, animated progress rings,     -->
+    <!-- pixel-art level badges, and comments describing skill mastery.   -->
+    <!-- =============================================================== -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <p class="section-tag">02. Capabilities</p>
+          <h2 id="skills-title" class="section-title">Technical Skills</h2>
+          <p class="section-description">Core technical competencies, programming languages, AI/ML tools, and foundational CS principles powering my engineering projects.</p>
+        </header>
+
+        <!-- Category Filter Pills (Interactive filtering for recruiters) -->
+        <div class="skills-filter-wrapper" role="tablist" aria-label="Filter Skills by Category">
+          <button type="button" class="skills-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button type="button" class="skills-filter-btn" data-filter="programming" role="tab" aria-selected="false">Programming</button>
+          <button type="button" class="skills-filter-btn" data-filter="aiml" role="tab" aria-selected="false">AI / ML</button>
+          <button type="button" class="skills-filter-btn" data-filter="dsa" role="tab" aria-selected="false">DSA & Concepts</button>
+          <button type="button" class="skills-filter-btn" data-filter="web" role="tab" aria-selected="false">Web Dev</button>
+          <button type="button" class="skills-filter-btn" data-filter="tools" role="tab" aria-selected="false">Tools & Tech</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-grid" id="skills-grid-container">
+          
+          <!-- ============================================================ -->
+          <!-- Category 1: Programming Languages                            -->
+          <!-- Languages: Python, Java, C, SQL                              -->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="programming">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Terminal/Code SVG icon representing programming languages -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Programming Languages</h3>
+                <span class="category-subtitle">Core languages for software & AI logic</span>
+              </div>
+            </div>
+
+            <div class="skill-progress-list">
+              <!-- Python: Primary language for AI/ML, data processing & automation -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Python
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 88</span>
+                    <span class="skill-percent">88%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 88%;" data-level="88"></div>
+                </div>
+                <!-- Comment: Python represents primary AI/ML modeling & script automation -->
+              </div>
+
+              <!-- Java: Object-oriented programming & competitive problem solving -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Java
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 82</span>
+                    <span class="skill-percent">82%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 82%;" data-level="82"></div>
+                </div>
+                <!-- Comment: Java represents OOPs principles, data structures & strong typing -->
+              </div>
+
+              <!-- C: Systems programming & memory management foundation -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> C Programming
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 78</span>
+                    <span class="skill-percent">78%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 78%;" data-level="78"></div>
+                </div>
+                <!-- Comment: C represents foundational pointers, memory allocation & low-level concepts -->
+              </div>
+
+              <!-- SQL: Relational database queries & data management -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> SQL
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 75</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 75%;" data-level="75"></div>
+                </div>
+                <!-- Comment: SQL represents relational database querying, schema design & data joins -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- Category 2: AI & Machine Learning                            -->
+          <!-- Focus area: AI models, Computer Vision, Crop & Animal Systems-->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="aiml">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Brain/Neural SVG icon representing AI & Machine Learning -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><path d="M12 6v6l4 2"></path></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">AI & Machine Learning</h3>
+                <span class="category-subtitle">Predictive models & computer vision</span>
+              </div>
+            </div>
+
+            <div class="skill-progress-list">
+              <!-- Artificial Intelligence: Core degree specialization -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Artificial Intelligence
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 82</span>
+                    <span class="skill-percent">82%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 82%;" data-level="82"></div>
+                </div>
+                <!-- Comment: AI represents intelligent alert systems & automated decision logic -->
+              </div>
+
+              <!-- Machine Learning: Model training, classification & detection -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Machine Learning
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 78</span>
+                    <span class="skill-percent">78%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 78%;" data-level="78"></div>
+                </div>
+                <!-- Comment: Machine Learning represents animal identification & sensor anomaly alerts -->
+              </div>
+
+              <!-- Computer Vision & Data Preprocessing: Image analysis & sensor telemetry -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Data Preprocessing & Vision
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 75</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 75%;" data-level="75"></div>
+                </div>
+                <!-- Comment: Preprocessing represents image normalization, noise reduction & sensor scaling -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- Category 3: Data Structures & Algorithms                     -->
+          <!-- Core CS fundamentals from curriculum & 9.40 CGPA track        -->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="dsa">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Layers/Tree SVG icon representing Data Structures & Algorithms -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Data Structures & Concepts</h3>
+                <span class="category-subtitle">Algorithmic efficiency & OOP principles</span>
+              </div>
+            </div>
+
+            <div class="skill-progress-list">
+              <!-- Data Structures & Algorithms: Problem solving foundation -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Data Structures & Algorithms
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 85</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 85%;" data-level="85"></div>
+                </div>
+                <!-- Comment: DSA represents time/space complexity optimization, arrays, trees & graphs -->
+              </div>
+
+              <!-- Object-Oriented Programming (OOPs): Class hierarchies & encapsulation -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> OOPs Principles
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 85</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 85%;" data-level="85"></div>
+                </div>
+                <!-- Comment: OOPs represents inheritance, polymorphism, encapsulation & modular code -->
+              </div>
+
+              <!-- Operating Systems: Process scheduling, memory & concurrency -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Operating Systems
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 75</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 75%;" data-level="75"></div>
+                </div>
+                <!-- Comment: OS represents process management, deadlock handling & file systems -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- Category 4: Web Development                                  -->
+          <!-- HTML, CSS, JavaScript, Flask — Web engineering capabilities  -->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="web">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Globe SVG icon representing Web Development -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Web Development</h3>
+                <span class="category-subtitle">Frontend layouts & Python web frameworks</span>
+              </div>
+            </div>
+
+            <div class="skill-progress-list">
+              <!-- HTML5: Semantic markup & structural accessibility -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> HTML5
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 82</span>
+                    <span class="skill-percent">82%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 82%;" data-level="82"></div>
+                </div>
+                <!-- Comment: HTML5 represents semantic sectioning tags, accessible forms & metadata -->
+              </div>
+
+              <!-- CSS3: Lavender Minimal styling, variables & media queries -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> CSS3 & Responsive Design
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 80</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 80%;" data-level="80"></div>
+                </div>
+                <!-- Comment: CSS3 represents custom properties, glassmorphism, flexbox/grid & theme queries -->
+              </div>
+
+              <!-- JavaScript: DOM manipulation & client-side interactivity -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> JavaScript (ES6+)
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 75</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 75%;" data-level="75"></div>
+                </div>
+                <!-- Comment: JS represents dynamic theme switching, chat assistant logic & event handlers -->
+              </div>
+
+              <!-- Flask: Python micro web framework for backends & APIs -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Flask Web Framework
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 72</span>
+                    <span class="skill-percent">72%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 72%;" data-level="72"></div>
+                </div>
+                <!-- Comment: Flask represents Python backend routing, API endpoints & model serving -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- Category 5: Tools & Technologies                             -->
+          <!-- Git, GitHub, VS Code, Sensors — Developer workflow tools    -->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Tool/Setting SVG icon representing developer tools -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Tools & Technologies</h3>
+                <span class="category-subtitle">Version control, IDEs & IoT sensors</span>
+              </div>
+            </div>
+
+            <div class="skill-progress-list">
+              <!-- Git / GitHub: Source control & collaborative repositories -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> Git & GitHub
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 80</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 80%;" data-level="80"></div>
+                </div>
+                <!-- Comment: Git/GitHub represents commits, branching, pull requests & code history -->
+              </div>
+
+              <!-- VS Code: Primary code editor & extension environment -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> VS Code Environment
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 85</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 85%;" data-level="85"></div>
+                </div>
+                <!-- Comment: VS Code represents debugging, workspace config & extension workflows -->
+              </div>
+
+              <!-- IoT Sensors & Telemetry: Crop field & hardware integration -->
+              <div class="skill-progress-item">
+                <div class="skill-info-header">
+                  <span class="skill-name-label">
+                    <span class="pixel-skill-dot"></span> IoT Sensors & Telemetry
+                  </span>
+                  <div class="skill-badges">
+                    <span class="pixel-lvl-tag">LVL 72</span>
+                    <span class="skill-percent">72%</span>
+                  </div>
+                </div>
+                <div class="skill-progress-bar-bg">
+                  <div class="skill-progress-fill" style="width: 72%;" data-level="72"></div>
+                </div>
+                <!-- Comment: IoT Sensors represents crop monitoring hardware, thresholds & data sampling -->
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================ -->
+          <!-- Category 6: Soft Skills & Mindset                             -->
+          <!-- Personal traits: Hardworking, Quick Learner, Problem Solving  -->
+          <!-- ============================================================ -->
+          <div class="skill-category-card" data-category="soft">
+            <div class="category-header">
+              <div class="category-icon-wrapper">
+                <!-- Star/Sparkle SVG icon representing professional soft skills -->
+                <svg class="category-svg-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+              </div>
+              <div class="category-meta">
+                <h3 class="category-title">Professional Mindset</h3>
+                <span class="category-subtitle">Work ethics & soft skill strengths</span>
+              </div>
+            </div>
+
+            <!-- Styled Pill Cloud with Pixel Sparkle Accents -->
+            <div class="soft-skills-cloud">
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">⚡</span> Hardworking</span>
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">🚀</span> Quick Learner</span>
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">🧩</span> Problem Solving</span>
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">🤝</span> Teamwork</span>
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">🔄</span> Adaptability</span>
+              <span class="soft-skill-badge"><span class="badge-pixel-icon">💬</span> Communication</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 4: TIMELINE (EDUCATION, PROJECTS & CAREER MILESTONES)  -->
+    <!-- Visually engaging vertical timeline with glass rounded cards,    -->
+    <!-- category filter tabs, hover effects, and pixel-art badges.      -->
+    <!-- =============================================================== -->
+    <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <p class="section-tag">03. Journey & Milestones</p>
+          <h2 id="timeline-title" class="section-title">Education, Projects & Milestones</h2>
+          <p class="section-description">A chronological timeline highlighting key academic milestones, major AI engineering projects, certifications, and academic excellence.</p>
+        </header>
+
+        <!-- Timeline Category Filter Tabs -->
+        <div class="timeline-filter-wrapper" role="tablist" aria-label="Filter Timeline Events">
+          <button type="button" class="timeline-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Events</button>
+          <button type="button" class="timeline-filter-btn" data-filter="education" role="tab" aria-selected="false">🎓 Education</button>
+          <button type="button" class="timeline-filter-btn" data-filter="projects" role="tab" aria-selected="false">🚀 Major Projects</button>
+          <button type="button" class="timeline-filter-btn" data-filter="milestones" role="tab" aria-selected="false">🏆 Milestones & Certs</button>
+        </div>
+
+        <!-- Vertical Timeline Container -->
+        <div class="timeline-track-wrapper">
+          <div class="timeline-central-line"></div>
+
+          <div class="timeline-events-list">
+
+            <!-- Item 1: B.E. Degree (Education) -->
+            <div class="timeline-card-item" data-category="education">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-education">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ EDUCATION ]</span>
+                    <span class="timeline-date-pill">2024 — Present</span>
+                  </div>
+                  <span class="timeline-status-tag">3rd Semester</span>
+                </div>
+                
+                <h3 class="timeline-item-title">B.E. in Artificial Intelligence & Machine Learning</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                  Adichunchanagiri Institute of Technology, Chikkamagaluru
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Pursuing B.E. degree specializing in Artificial Intelligence and Machine Learning. Maintained an outstanding <strong>9.40 CGPA</strong> in 1st year. Mastered core CS fundamentals including Python, Java, C, Data Structures & Algorithms, OOPs, and Operating Systems.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">9.40 CGPA</span>
+                  <span class="timeline-tech-pill">AI/ML</span>
+                  <span class="timeline-tech-pill">Python & Java</span>
+                  <span class="timeline-tech-pill">Data Structures</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Smart Animal Detection System (Major Project) -->
+            <div class="timeline-card-item" data-category="projects">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ MAJOR PROJECT ]</span>
+                    <span class="timeline-date-pill">2024</span>
+                  </div>
+                  <span class="timeline-status-tag project-tag">AI / CV Project</span>
+                </div>
+                
+                <h3 class="timeline-item-title">Smart Animal Detection System</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  Practical Engineering Project • AI Vision & Alerting
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Designed and developed an AI-driven animal identification system capable of recognizing animal species in real-time and triggering instant safety alerts. Applied object classification, image processing, and algorithmic problem-solving to mitigate wildlife human conflicts.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">Python</span>
+                  <span class="timeline-tech-pill">Computer Vision</span>
+                  <span class="timeline-tech-pill">AI Detection</span>
+                  <span class="timeline-tech-pill">Alert Triggers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Crop Field Monitoring System (Major Project) -->
+            <div class="timeline-card-item" data-category="projects">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-project">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ MAJOR PROJECT ]</span>
+                    <span class="timeline-date-pill">2024</span>
+                  </div>
+                  <span class="timeline-status-tag project-tag">IoT & AgTech</span>
+                </div>
+                
+                <h3 class="timeline-item-title">Crop Field Monitoring System</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22h20M12 2v20M4.93 10.93l14.14 0"></path></svg>
+                  Smart Agriculture Technology • Telemetry & Sensors
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Engineered an agricultural monitoring platform integrating IoT sensor telemetry to observe field soil parameters, ambient temperature, and moisture levels. Built timely automated alert dispatching to empower smart farming decisions.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">IoT Sensors</span>
+                  <span class="timeline-tech-pill">Telemetry</span>
+                  <span class="timeline-tech-pill">Python Logic</span>
+                  <span class="timeline-tech-pill">AgTech</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Academic Excellence Milestone (Milestone) -->
+            <div class="timeline-card-item" data-category="milestones">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-milestone">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ MILESTONE ]</span>
+                    <span class="timeline-date-pill">2024</span>
+                  </div>
+                  <span class="timeline-status-tag milestone-tag">Academic Honor</span>
+                </div>
+                
+                <h3 class="timeline-item-title">9.40 CGPA First-Year Excellence Award</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  Adichunchanagiri Institute of Technology
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Achieved an extraordinary <strong>9.40 CGPA</strong> across 1st year engineering coursework, demonstrating mastery in programming mathematics, computer science fundamentals, and problem-solving.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">9.40 CGPA</span>
+                  <span class="timeline-tech-pill">Top Rank</span>
+                  <span class="timeline-tech-pill">Academic Distinction</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Certifications & Internships (Milestone) -->
+            <div class="timeline-card-item" data-category="milestones">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-milestone">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ CERTIFICATIONS ]</span>
+                    <span class="timeline-date-pill">2024</span>
+                  </div>
+                  <span class="timeline-status-tag milestone-tag">Professional Badges</span>
+                </div>
+                
+                <h3 class="timeline-item-title">Hackathon, Python Workshop & 3-Day Internship</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  Verified Resume Certifications & Training
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Earned official certificates for participating in a competitive Technical Hackathon, completed hands-on intensive Python Programming Workshop training, and finished a 3-Day Technical Engineering Internship.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">Hackathon Certificate</span>
+                  <span class="timeline-tech-pill">Python Workshop</span>
+                  <span class="timeline-tech-pill">3-Day Internship</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: Pre-University Course (Education) -->
+            <div class="timeline-card-item" data-category="education">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-education">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ EDUCATION ]</span>
+                    <span class="timeline-date-pill">Completed</span>
+                  </div>
+                  <span class="timeline-status-tag">PUC Science</span>
+                </div>
+                
+                <h3 class="timeline-item-title">Pre-University Course (PUC)</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                  Shaheen PU College, Aurad, Bidar
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Completed Pre-University studies in Science stream with strong emphasis on higher mathematics, physics, and computational thinking preparing for engineering education.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">Shaheen PU College</span>
+                  <span class="timeline-tech-pill">Science Stream</span>
+                  <span class="timeline-tech-pill">Bidar</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 7: SSLC (Education) -->
+            <div class="timeline-card-item" data-category="education">
+              <div class="timeline-node-wrapper">
+                <div class="timeline-node-icon icon-education">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14l9-5-9-5-9 5 9 5z"></path></svg>
+                </div>
+              </div>
+
+              <div class="timeline-card-box">
+                <div class="timeline-card-header">
+                  <div class="timeline-card-badges">
+                    <span class="pixel-timeline-type">[ EDUCATION ]</span>
+                    <span class="timeline-date-pill">Completed</span>
+                  </div>
+                  <span class="timeline-status-tag">SSLC</span>
+                </div>
+                
+                <h3 class="timeline-item-title">Secondary School Leaving Certificate (SSLC)</h3>
+                <div class="timeline-item-institution">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                  Government High School, Eekeler, Bidar
+                </div>
+                
+                <p class="timeline-item-desc">
+                  Completed secondary education with high academic foundation in mathematics, science, and general academics.
+                </p>
+
+                <div class="timeline-item-tags">
+                  <span class="timeline-tech-pill">SSLC Completed</span>
+                  <span class="timeline-tech-pill">Government High School</span>
+                  <span class="timeline-tech-pill">Eekeler, Bidar</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 5: PROJECTS (Thumbnail Gallery with Detail Modals)      -->
+    <!-- Each project card features a clickable thumbnail image that     -->
+    <!-- opens a detailed overlay/modal view. Strictly using projects    -->
+    <!-- from resume (Smart Animal Detection & Crop Field Monitoring).   -->
+    <!-- =============================================================== -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <p class="section-tag">04. Showcase</p>
+          <h2 id="projects-title" class="section-title">Project Experience</h2>
+          <p class="section-description">Practical AI & IoT engineering projects with clickable thumbnails — tap any card to explore the full project details.</p>
+        </header>
+
+        <div class="projects-gallery-grid">
+
+          <!-- ========================================================== -->
+          <!-- Project Card 1: Smart Animal Detection System               -->
+          <!-- THUMBNAIL CONNECTION: The thumbnail image (project-animal-  -->
+          <!-- detection.jpg) visually represents the AI detection dash-   -->
+          <!-- board. Clicking the thumbnail or "View Details" button      -->
+          <!-- opens the #project-modal-1 overlay with full description,   -->
+          <!-- tech stack, key features, and GitHub link.                  -->
+          <!-- ========================================================== -->
+          <article class="project-showcase-card" id="project-card-1">
+            <!-- Clickable Thumbnail: Opens modal #project-modal-1 -->
+            <div class="project-thumb-wrapper" data-modal="project-modal-1" role="button" tabindex="0" aria-label="View Smart Animal Detection System details">
+              <img src="project-animal-detection.jpg" alt="Smart Animal Detection System — AI-powered wildlife recognition dashboard" class="project-thumb-img" loading="lazy">
+              <!-- Thumbnail Hover Overlay with Eye Icon -->
+              <div class="project-thumb-overlay">
+                <div class="thumb-overlay-content">
+                  <svg class="thumb-eye-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span class="thumb-overlay-label">View Project</span>
+                </div>
+              </div>
+              <!-- Category Badge on Thumbnail -->
+              <span class="project-category-badge">AI / Computer Vision</span>
+            </div>
+
+            <!-- Card Body: Project Summary -->
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <span class="project-type-tag">🦁 Major Project</span>
+                <span class="project-year-tag">2024</span>
+              </div>
+              <h3 class="project-card-title">Smart Animal Detection System</h3>
+              <p class="project-card-excerpt">
+                AI-based animal identification system with real-time species detection and automated safety alert generation using computer vision algorithms.
+              </p>
+              <div class="project-card-tech">
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">AI</span>
+                <span class="project-tech-tag">Computer Vision</span>
+                <span class="project-tech-tag">Alerts</span>
+              </div>
+              <div class="project-card-actions">
+                <!-- "View Details" button: triggers modal #project-modal-1 -->
+                <button type="button" class="btn-view-project" data-modal="project-modal-1" aria-label="View full details of Smart Animal Detection System">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  View Details
+                </button>
+                <!-- GitHub link: connects to Shivkarna's GitHub profile -->
+                <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="btn-project-github" aria-label="View on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================== -->
+          <!-- Project Card 2: Crop Field Monitoring System                -->
+          <!-- THUMBNAIL CONNECTION: The thumbnail (project-crop-          -->
+          <!-- monitoring.jpg) visually represents the smart agriculture   -->
+          <!-- IoT dashboard with field sensors. Clicking opens the        -->
+          <!-- #project-modal-2 overlay showing full project description,  -->
+          <!-- sensor tech stack, key features, and GitHub link.           -->
+          <!-- ========================================================== -->
+          <article class="project-showcase-card" id="project-card-2">
+            <!-- Clickable Thumbnail: Opens modal #project-modal-2 -->
+            <div class="project-thumb-wrapper" data-modal="project-modal-2" role="button" tabindex="0" aria-label="View Crop Field Monitoring System details">
+              <img src="project-crop-monitoring.jpg" alt="Crop Field Monitoring System — IoT smart agriculture sensor dashboard" class="project-thumb-img" loading="lazy">
+              <!-- Thumbnail Hover Overlay with Eye Icon -->
+              <div class="project-thumb-overlay">
+                <div class="thumb-overlay-content">
+                  <svg class="thumb-eye-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span class="thumb-overlay-label">View Project</span>
+                </div>
+              </div>
+              <!-- Category Badge on Thumbnail -->
+              <span class="project-category-badge">IoT / AgTech</span>
+            </div>
+
+            <!-- Card Body: Project Summary -->
+            <div class="project-card-body">
+              <div class="project-card-meta">
+                <span class="project-type-tag">🌾 Major Project</span>
+                <span class="project-year-tag">2024</span>
+              </div>
+              <h3 class="project-card-title">Crop Field Monitoring System</h3>
+              <p class="project-card-excerpt">
+                Smart agriculture platform integrating IoT sensor telemetry for real-time soil, temperature, and moisture monitoring with automated alert dispatching.
+              </p>
+              <div class="project-card-tech">
+                <span class="project-tech-tag">IoT Sensors</span>
+                <span class="project-tech-tag">Python</span>
+                <span class="project-tech-tag">Telemetry</span>
+                <span class="project-tech-tag">AgTech</span>
+              </div>
+              <div class="project-card-actions">
+                <!-- "View Details" button: triggers modal #project-modal-2 -->
+                <button type="button" class="btn-view-project" data-modal="project-modal-2" aria-label="View full details of Crop Field Monitoring System">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  View Details
+                </button>
+                <!-- GitHub link: connects to Shivkarna's GitHub profile -->
+                <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="btn-project-github" aria-label="View on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================================= -->
+    <!-- PROJECT DETAIL MODALS                                              -->
+    <!-- Each modal is linked to its project card via matching IDs.         -->
+    <!-- Modal #project-modal-1 ↔ Project Card #project-card-1             -->
+    <!-- Modal #project-modal-2 ↔ Project Card #project-card-2             -->
+    <!-- Clicking the thumbnail or "View Details" button triggers the       -->
+    <!-- corresponding modal via the data-modal attribute in script.js.     -->
+    <!-- ================================================================= -->
+
+    <!-- Modal 1: Smart Animal Detection System Detail View -->
+    <div class="project-modal-backdrop" id="project-modal-1" role="dialog" aria-modal="true" aria-labelledby="modal-title-1">
+      <div class="project-modal-container">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <!-- Modal Header Image: Same thumbnail for visual continuity -->
+        <div class="modal-hero-image">
+          <img src="project-animal-detection.jpg" alt="Smart Animal Detection System" class="modal-hero-img">
+          <div class="modal-hero-gradient"></div>
+        </div>
+
+        <div class="modal-body-content">
+          <div class="modal-badges-row">
+            <span class="modal-category-badge">AI / Computer Vision</span>
+            <span class="modal-year-badge">2024</span>
+            <span class="modal-status-badge">Completed</span>
+          </div>
+
+          <h3 id="modal-title-1" class="modal-project-title">Smart Animal Detection System</h3>
+
+          <p class="modal-project-desc">
+            Developed an <strong>AI-based animal detection system</strong> for identifying animal species in real-time and generating instant safety alerts. This project applied programming fundamentals, image classification algorithms, and problem-solving techniques as part of practical engineering experience.
+          </p>
+          <p class="modal-project-desc">
+            The system leverages computer vision to process visual data from sensors, classify detected animals using trained models, and dispatch automated alerts to stakeholders — addressing real-world wildlife-human conflict challenges.
+          </p>
+
+          <div class="modal-features-block">
+            <h4 class="modal-sub-heading">Key Features</h4>
+            <ul class="modal-features-list">
+              <li>Real-time animal species identification using AI classification</li>
+              <li>Automated safety alert generation and dispatch system</li>
+              <li>Image preprocessing and noise reduction pipeline</li>
+              <li>Practical engineering application of problem-solving concepts</li>
+            </ul>
+          </div>
+
+          <div class="modal-tech-block">
+            <h4 class="modal-sub-heading">Technologies Used</h4>
+            <div class="modal-tech-tags">
+              <span class="modal-tech-pill">Python</span>
+              <span class="modal-tech-pill">Artificial Intelligence</span>
+              <span class="modal-tech-pill">Computer Vision</span>
+              <span class="modal-tech-pill">Image Processing</span>
+              <span class="modal-tech-pill">Alert Systems</span>
+            </div>
+          </div>
+
+          <div class="modal-actions-row">
+            <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Crop Field Monitoring System Detail View -->
+    <div class="project-modal-backdrop" id="project-modal-2" role="dialog" aria-modal="true" aria-labelledby="modal-title-2">
+      <div class="project-modal-container">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <!-- Modal Header Image: Same thumbnail for visual continuity -->
+        <div class="modal-hero-image">
+          <img src="project-crop-monitoring.jpg" alt="Crop Field Monitoring System" class="modal-hero-img">
+          <div class="modal-hero-gradient"></div>
+        </div>
+
+        <div class="modal-body-content">
+          <div class="modal-badges-row">
+            <span class="modal-category-badge">IoT / AgTech</span>
+            <span class="modal-year-badge">2024</span>
+            <span class="modal-status-badge">Completed</span>
+          </div>
+
+          <h3 id="modal-title-2" class="modal-project-title">Crop Field Monitoring System</h3>
+
+          <p class="modal-project-desc">
+            Developed a <strong>smart crop field monitoring platform</strong> to observe and analyze real-time agricultural field conditions. The system employs IoT sensors and technology for continuous monitoring and timely alerts, applying technical knowledge to address a real-world agricultural challenge.
+          </p>
+          <p class="modal-project-desc">
+            Integrated multiple sensor nodes for measuring soil moisture, ambient temperature, and humidity — feeding telemetry data into an intelligent alert system that notifies farmers about anomalous conditions.
+          </p>
+
+          <div class="modal-features-block">
+            <h4 class="modal-sub-heading">Key Features</h4>
+            <ul class="modal-features-list">
+              <li>Multi-sensor IoT telemetry for soil, temperature & humidity</li>
+              <li>Automated anomaly detection with threshold-based alerts</li>
+              <li>Real-time dashboard for field condition visualization</li>
+              <li>Scalable architecture for multiple agricultural zones</li>
+            </ul>
+          </div>
+
+          <div class="modal-tech-block">
+            <h4 class="modal-sub-heading">Technologies Used</h4>
+            <div class="modal-tech-tags">
+              <span class="modal-tech-pill">Python</span>
+              <span class="modal-tech-pill">IoT Sensors</span>
+              <span class="modal-tech-pill">Telemetry</span>
+              <span class="modal-tech-pill">Smart Agriculture</span>
+              <span class="modal-tech-pill">Alert Automation</span>
+            </div>
+          </div>
+
+          <div class="modal-actions-row">
+            <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 6: PORTFOLIO HIGHLIGHT & VIDEO INTRODUCTION             -->
+    <!-- Dedicated responsive YouTube video embed with pixel-art window  -->
+    <!-- aesthetics, rounded corners, subtle hover effect, custom play   -->
+    <!-- controls, interactive chapter selector, and detailed caption.   -->
+    <!-- =============================================================== -->
+    <section class="section video-highlight-section" id="video-highlight" aria-labelledby="video-highlight-title">
+      <div class="container video-container-wrapper">
+
+        <!-- Section Header with Pixel-Art Accents -->
+        <header class="section-header text-center">
+          <p class="section-tag pixel-tag-badge">
+            <span class="pixel-star-icon">✦</span>
+            <span>05. Video Spotlight</span>
+            <span class="pixel-star-icon">✦</span>
+          </p>
+          <h2 id="video-highlight-title" class="section-title">
+            Portfolio Highlight &amp; Introduction
+          </h2>
+          <p class="section-description">
+            A responsive audiovisual walkthrough demonstrating artificial intelligence architectures, computer vision pipelines, and IoT sensor telemetry developed throughout my AIML engineering journey.
+          </p>
+        </header>
+
+        <!-- Pixel-Art Styled Video Showcase Window -->
+        <div class="video-showcase-card" id="video-showcase-container">
+          
+          <!-- Retro Pixel Window Header Bar -->
+          <div class="pixel-video-header">
+            <div class="pixel-window-title">
+              <span class="pixel-indicator-rec" title="Live Playback Status">
+                <span class="rec-dot"></span> REC
+              </span>
+              <span class="pixel-file-name">HIGHLIGHT_STREAM_v2.0.MP4</span>
+              <span class="pixel-quality-badge">[ 1080P HD • 60 FPS ]</span>
+            </div>
+            <div class="pixel-window-controls" aria-hidden="true">
+              <span class="pixel-win-btn btn-min" title="Minimize">_</span>
+              <span class="pixel-win-btn btn-max" title="Maximize">□</span>
+              <span class="pixel-win-btn btn-close" title="Close">✕</span>
+            </div>
+          </div>
+
+          <!-- Responsive Video Frame Container (aspect-ratio 16:9 + padding fallback) -->
+          <div class="responsive-video-frame" id="responsive-video-frame">
+            <iframe 
+              id="portfolio-youtube-iframe"
+              class="youtube-video-player"
+              src="https://www.youtube.com/embed/aircAruvnKk?enablejsapi=1&amp;rel=0&amp;modestbranding=1" 
+              title="Shivkarna Portfolio Highlight &amp; Introduction - AI &amp; Machine Learning Foundations"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <!-- Video Interactive Play Controls Bar -->
+          <div class="video-controls-bar" aria-label="Custom Video Play Controls">
+            <div class="controls-playback-group">
+              <button type="button" class="video-ctrl-btn btn-play-toggle" id="video-ctrl-play" aria-label="Toggle Play / Pause Video">
+                <svg class="ctrl-icon icon-play" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="ctrl-icon icon-pause" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                <span class="ctrl-label" id="ctrl-play-label">Play / Pause</span>
+              </button>
+              <button type="button" class="video-ctrl-btn" id="video-ctrl-mute" aria-label="Toggle Audio Mute">
+                <svg class="ctrl-icon icon-mute" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                <span class="ctrl-label" id="ctrl-mute-label">Mute Audio</span>
+              </button>
+              <button type="button" class="video-ctrl-btn" id="video-ctrl-replay" aria-label="Replay Video from Start">
+                <svg class="ctrl-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path></svg>
+                <span class="ctrl-label">Replay</span>
+              </button>
+            </div>
+
+            <div class="controls-status-group">
+              <span class="playback-timer-pill" id="playback-timer-pill">
+                <span class="timer-dot"></span>
+                <span class="timer-text" id="video-topic-badge">Neural Networks Core</span>
+              </span>
+              <button type="button" class="video-ctrl-btn btn-fullscreen" id="video-ctrl-fullscreen" aria-label="Toggle Fullscreen">
+                <svg class="ctrl-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+                <span class="ctrl-label">Fullscreen</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Highlight Chapter / Video Topic Switcher -->
+          <div class="video-chapters-wrapper" role="tablist" aria-label="Select Video Highlight Topic">
+            <span class="chapters-label">[ SELECT DEMO ]:</span>
+            <button type="button" class="chapter-pill-btn active" data-video-id="aircAruvnKk" data-chapter="neural" role="tab" aria-selected="true">
+              <span class="chapter-number">01</span>
+              <span>AI Neural Core</span>
+            </button>
+            <button type="button" class="chapter-pill-btn" data-video-id="bXv40UqF_jI" data-chapter="vision" role="tab" aria-selected="false">
+              <span class="chapter-number">02</span>
+              <span>Animal Vision AI</span>
+            </button>
+            <button type="button" class="chapter-pill-btn" data-video-id="6mBO2vqLv38" data-chapter="iot" role="tab" aria-selected="false">
+              <span class="chapter-number">03</span>
+              <span>IoT Crop Telemetry</span>
+            </button>
+          </div>
+
+          <!-- Video Caption & Explanatory Metadata Card -->
+          <div class="video-caption-container">
+            <div class="caption-header-row">
+              <div class="caption-tag-block">
+                <span class="pixel-caption-icon">👾</span>
+                <span class="pixel-caption-title">[ CAPTION // SYSTEM.LOG ]</span>
+              </div>
+              <span class="caption-timestamp-badge" id="caption-timestamp">AIML Engineering • 2024 Showcase</span>
+            </div>
+
+            <!-- Short caption explaining the video's content -->
+            <p class="video-caption-text" id="video-caption-text">
+              Featured highlight: A comprehensive visual walkthrough of artificial neural networks, computer vision recognition pipelines, and real-time telemetry streaming — core computational methodologies directly implemented in Shivkarna's <strong>Smart Animal Detection System</strong> and <strong>Crop Field Monitoring System</strong> at Adichunchanagiri Institute of Technology.
+            </p>
+
+            <!-- Video Key Highlights Pills -->
+            <div class="caption-tech-tags" id="caption-tech-tags">
+              <span class="pixel-tech-pill">✦ Neural Networks</span>
+              <span class="pixel-tech-pill">✦ Computer Vision</span>
+              <span class="pixel-tech-pill">✦ Species Classification</span>
+              <span class="pixel-tech-pill">✦ IoT Telemetry Alerts</span>
+              <span class="pixel-tech-pill">✦ Python &amp; OpenCV</span>
+              <span class="pixel-tech-pill">✦ 9.40 CGPA Academic Rigor</span>
+            </div>
+
+            <!-- YouTube External Link Action -->
+            <div class="caption-footer-links">
+              <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" rel="noopener noreferrer" class="btn-yt-external" id="btn-yt-external" aria-label="Watch original video on YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                <span>Watch on YouTube</span>
+              </a>
+              <a href="#projects" class="btn-caption-secondary">
+                <span>View Matching Projects ↓</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 7: TESTIMONIALS (Client & Peer Endorsements)            -->
+    <!-- Feedback from clients, peers, and mentors in card containers    -->
+    <!-- with rounded corners, subtle drop shadows, and clean typography -->
+    <!-- =============================================================== -->
+    <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+
+        <header class="section-header text-center">
+          <p class="section-tag pixel-tag-badge">
+            <span class="pixel-star-icon">✦</span>
+            <span>06. Endorsements</span>
+            <span class="pixel-star-icon">✦</span>
+          </p>
+          <h2 id="testimonials-title" class="section-title">Client &amp; Peer Testimonials</h2>
+          <p class="section-description">
+            Direct feedback and quotes from agricultural stakeholders, engineering peers, and faculty mentors highlighting work ethic, problem-solving, and collaboration.
+          </p>
+        </header>
+
+        <!-- Testimonial Category Filter Tabs -->
+        <div class="testimonial-filter-wrapper" role="tablist" aria-label="Filter Testimonials by Role">
+          <button type="button" class="testimonial-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Feedback</button>
+          <button type="button" class="testimonial-filter-btn" data-filter="client" role="tab" aria-selected="false">Clients &amp; Stakeholders</button>
+          <button type="button" class="testimonial-filter-btn" data-filter="peer" role="tab" aria-selected="false">Peers &amp; Collaborators</button>
+          <button type="button" class="testimonial-filter-btn" data-filter="mentor" role="tab" aria-selected="false">Academic Mentors</button>
+        </div>
+
+        <!-- Testimonials Cards Grid -->
+        <div class="testimonials-grid" id="testimonials-grid">
+          
+          <!-- Testimonial 1: Client & Stakeholder -->
+          <article class="testimonial-card" data-category="client" id="testimonial-card-1">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating-row">
+                <div class="star-rating-group" aria-label="5 out of 5 stars">
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                </div>
+                <span class="testimonial-badge client-badge">[ CLIENT FEEDBACK ]</span>
+              </div>
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            </div>
+
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Shivkarna demonstrated impressive engineering intuition when developing the Crop Field Monitoring prototype. The automated telemetry alerts for soil moisture anomalies were accurate, easy to read, and solved real pain points for our agricultural test plots."
+              </p>
+            </blockquote>
+
+            <div class="testimonial-project-tag">
+              <span class="tag-icon">🌾</span>
+              <span>Project: Smart Crop Field Monitoring System</span>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-initials avatar-client" aria-hidden="true">RK</div>
+              <div class="author-meta">
+                <h3 class="author-name">Rajesh K.</h3>
+                <p class="author-role">Agricultural Field Stakeholder &amp; Pilot Lead</p>
+                <span class="author-context">AgTech Field Trials • 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 2: Project Peer -->
+          <article class="testimonial-card" data-category="peer" id="testimonial-card-2">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating-row">
+                <div class="star-rating-group" aria-label="5 out of 5 stars">
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                </div>
+                <span class="testimonial-badge peer-badge">[ PEER COLLABORATOR ]</span>
+              </div>
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            </div>
+
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Working alongside Shivkarna on the Smart Animal Detection System was a seamless experience. His grasp of Python, OpenCV computer vision logic, and clean modular code enabled us to build real-time detection pipelines and automated alerts with high precision."
+              </p>
+            </blockquote>
+
+            <div class="testimonial-project-tag">
+              <span class="tag-icon">🦁</span>
+              <span>Project: Smart Animal Detection System</span>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-initials avatar-peer" aria-hidden="true">PT</div>
+              <div class="author-meta">
+                <h3 class="author-name">Pratiksha T.</h3>
+                <p class="author-role">AIML Engineering Peer &amp; Lab Partner</p>
+                <span class="author-context">Adichunchanagiri Inst. of Technology • 2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 3: Academic Faculty Mentor -->
+          <article class="testimonial-card" data-category="mentor" id="testimonial-card-3">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating-row">
+                <div class="star-rating-group" aria-label="5 out of 5 stars">
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                </div>
+                <span class="testimonial-badge mentor-badge">[ FACULTY MENTOR ]</span>
+              </div>
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            </div>
+
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "Shivkarna stands out for both academic discipline and practical curiosity. Sustaining a 9.40 CGPA in the first year while enthusiastically exploring AI and core computing principles showcases authentic intellectual drive and consistency."
+              </p>
+            </blockquote>
+
+            <div class="testimonial-project-tag">
+              <span class="tag-icon">🎓</span>
+              <span>Academic Rigor: 9.40 CGPA &amp; Core CS</span>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-initials avatar-mentor" aria-hidden="true">RN</div>
+              <div class="author-meta">
+                <h3 class="author-name">Dr. Ramesh N.</h3>
+                <p class="author-role">Faculty Mentor &amp; Professor</p>
+                <span class="author-context">Dept. of AI &amp; ML, AIT Chikkamagaluru</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Testimonial 4: Hackathon Peer & Collaborator -->
+          <article class="testimonial-card" data-category="peer" id="testimonial-card-4">
+            <div class="testimonial-card-top">
+              <div class="testimonial-rating-row">
+                <div class="star-rating-group" aria-label="5 out of 5 stars">
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                  <span class="star-icon">★</span>
+                </div>
+                <span class="testimonial-badge hackathon-badge">[ HACKATHON PEER ]</span>
+              </div>
+              <div class="testimonial-quote-icon" aria-hidden="true">“</div>
+            </div>
+
+            <blockquote class="testimonial-blockquote">
+              <p class="testimonial-text">
+                "During our technical hackathon, Shivkarna was our steady anchor for algorithmic problem-solving. Under tight deadlines, his structured approach, quick learning, and calm teamwork allowed us to deliver a functional solution with confidence."
+              </p>
+            </blockquote>
+
+            <div class="testimonial-project-tag">
+              <span class="tag-icon">⚡</span>
+              <span>Event: Technical Hackathon Team</span>
+            </div>
+
+            <div class="testimonial-author">
+              <div class="author-avatar-initials avatar-hackathon" aria-hidden="true">HV</div>
+              <div class="author-meta">
+                <h3 class="author-name">Harsha V.</h3>
+                <p class="author-role">Hackathon Team Lead &amp; Software Peer</p>
+                <span class="author-context">Engineering Innovation Summit • 2024</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 7: CHAT (Interactive Lavender Assistant Component)      -->
+    <!-- Direct interactive messaging & questions about resume details   -->
+    <!-- =============================================================== -->
+    <section class="section chat-section" id="chat" aria-labelledby="chat-title">
+      <div class="container chat-container">
+
+        <header class="section-header text-center">
+          <p class="section-tag">06. Interactive Assistant</p>
+          <h2 id="chat-title" class="section-title">Chat with Shivkarna's Assistant</h2>
+          <p class="section-description">
+            Ask any question about my resume, skills, academic record, or projects for an instant interactive response.
+          </p>
+        </header>
+
+        <!-- Interactive Lavender Chat Window -->
+        <div class="chat-card-wrapper">
+          <div class="chat-header">
+            <div class="chat-header-avatar">
+              <img src="1.jpeg" alt="Shivkarna Assistant" class="chat-avatar-img">
+              <span class="chat-online-dot"></span>
+            </div>
+            <div class="chat-header-info">
+              <h3 class="chat-header-title">Shivkarna Assistant</h3>
+              <p class="chat-header-status">Online • Verified Resume Information</p>
+            </div>
+            <button type="button" class="chat-clear-btn" id="chat-clear-btn" title="Reset conversation">Reset Chat</button>
+          </div>
+
+          <!-- Suggested Quick Prompts -->
+          <div class="chat-suggestions" id="chat-suggestions">
+            <span class="suggestions-label">Try asking:</span>
+            <button type="button" class="suggestion-chip" data-query="What programming languages do you know?">Programming Languages</button>
+            <button type="button" class="suggestion-chip" data-query="Tell me about the Smart Animal Detection System">Animal Detection Project</button>
+            <button type="button" class="suggestion-chip" data-query="Tell me about the Crop Field Monitoring project">Crop Field Project</button>
+            <button type="button" class="suggestion-chip" data-query="What is your CGPA and college?">College & CGPA</button>
+          </div>
+
+          <!-- Chat Conversation Log -->
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+            
+            <!-- Welcome message from bot -->
+            <div class="chat-message message-bot">
+              <div class="message-bubble">
+                <p>Hello! 👋 I'm here to answer any questions about Shivkarna's education, skills (C, Python, Java), projects, and contact info based directly on the resume. What would you like to know?</p>
+                <span class="message-time">Just now</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Chat Input Area -->
+          <form class="chat-input-form" id="chat-input-form">
+            <input 
+              type="text" 
+              id="chat-user-input" 
+              class="chat-input-field" 
+              placeholder="Ask a question about skills, projects, or education..." 
+              autocomplete="off" 
+              required
+            >
+            <button type="submit" class="chat-send-btn" id="chat-send-btn" aria-label="Send message">
+              <span>Send</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================================== -->
+    <!-- SECTION 8: CONTACT                                              -->
+    <!-- Contact form, email, phone, and profile links from resume       -->
+    <!-- =============================================================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-container">
+
+        <header class="section-header text-center">
+          <p class="section-tag">07. Connect</p>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+          <p class="section-description">
+            Feel free to reach out for software development roles, AI/ML opportunities, or academic discussions.
+          </p>
+        </header>
+
+        <div class="contact-card">
+          <!-- Direct Contact Information from Resume -->
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Contact Details</h3>
+            <p class="contact-note">Direct communication channels as listed on my resume:</p>
+            
+            <ul class="contact-list">
+              <li class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <a href="mailto:shivakarnab@gmail.com" class="contact-link">shivakarnab@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">📞</span>
+                <a href="tel:+916363774957" class="contact-link">+91 6363774957</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">📍</span>
+                <span>Bidar, Karnataka, India</span>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">💼</span>
+                <a href="https://linkedin.com/in/shivakarna-biradar-92b8703ba" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/shivakarna-biradar-92b8703ba</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/shivkarnabi-hue</a>
+              </li>
+              <li class="contact-item">
+                <span class="contact-icon">🌐</span>
+                <a href="https://proofile.in/shivkarna" target="_blank" rel="noopener noreferrer" class="contact-link">proofile.in/shivkarna</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" rows="4" class="form-textarea" placeholder="Hi Shivkarna, I'd like to discuss a project or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block submit-btn-highlight" id="contact-submit-btn">
+              <span>Send Message</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+            
+            <!-- Success Confirmation Message (Hidden by default) -->
+            <div class="form-success-message" id="form-success-message" style="display: none;">
+              <span class="success-icon">✓</span>
+              <p>Thank you! Your message has been successfully sent.</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================= -->
+  <!-- FOOTER                                                            -->
+  <!-- ================================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-brand">
+        <p class="footer-logo">&lt;Shivkarna /&gt;</p>
+        <p class="footer-copy">
+          &copy; <span id="current-year">2026</span> Shivkarna. Designed in Lavender Minimal with pure semantic web standards.
+        </p>
+      </div>
+
+      <!-- Social Media Icons (Pixel Art Aesthetic) -->
+      <div class="footer-social" aria-label="Social Media Links">
+        <a href="https://github.com/shivkarnabi-hue" target="_blank" rel="noopener noreferrer" class="pixel-social-link" aria-label="Visit Shivkarna's GitHub Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pixel-icon" shape-rendering="crispEdges">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/shivakarna-biradar-92b8703ba" target="_blank" rel="noopener noreferrer" class="pixel-social-link" aria-label="Visit Shivkarna's LinkedIn Profile">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pixel-icon" shape-rendering="crispEdges">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:shivakarnab@gmail.com" class="pixel-social-link" aria-label="Send an Email to Shivkarna">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pixel-icon" shape-rendering="crispEdges">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://proofile.in/shivkarna" target="_blank" rel="noopener noreferrer" class="pixel-social-link" aria-label="Visit Shivkarna's Proofile Webpage">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="pixel-icon" shape-rendering="crispEdges">
+            <circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Quick Links">
+        <ul class="footer-nav-list">
+          <li><a href="#hero" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About Me</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#timeline" class="footer-link">Timeline</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#video-highlight" class="footer-link">Highlight</a></li>
+          <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
+          <li><a href="#chat" class="footer-link">Chat</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-back-to-top">
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top of page">
+          <span aria-hidden="true">↑</span> Back to Top
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript for Vertical Nav, ScrollSpy, Chat & Night Mode -->
+  <script src="script.js"></script>
+</body>
+</html>
